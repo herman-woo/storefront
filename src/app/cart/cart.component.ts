@@ -24,4 +24,10 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getCart();
     this.total = this.cartService.getTotal();
   }
+  updateCost():void{
+    this.total = this.cartService.getTotal();
+  }
+  checkoutCart():void{
+    console.log(this.total)
+  }
 }
