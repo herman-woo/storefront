@@ -13,6 +13,9 @@ import { DetailsComponent } from './products/details/details.component';
 import { CardComponent } from './products/card/card.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { FormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutItemComponent } from './checkout/checkout-item/checkout-item.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     DetailsComponent,
     CardComponent,
-    CartItemComponent
+    CartItemComponent,
+    CheckoutComponent,
+    CheckoutItemComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,
