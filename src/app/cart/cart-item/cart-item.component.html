@@ -1,0 +1,18 @@
+<div class="cart-item">
+    <div class="cart-item-info">
+        <div>
+            <h5><a routerLink="/product/{{item.product_id}}">{{item.product_name}}</a></h5>
+            <p>${{item.product_price}}.00</p>
+        </div>
+        <div>
+            <p> q  - {{item.order_qty}}</p>
+            <p>Quantity: <input name="qty" type="number" value="{{item.order_qty}}" min="0" ></p>
+            
+            <h5>Cost: ${{item.order_qty * item.product_price}}.00</h5>
+        </div>
+    </div>
+    
+    <button (click)="removeSelf(item)">remove</button>
+</div>
+
+
